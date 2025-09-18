@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color Picker</title>
+
+  </head>
+  <body>
+    <h2>🎨 Select Background Color</h2>
+
+    <!-- Dropdown with onchange -->
+    <select id="colorPicker" onchange="changeColor(this.value)">
+      <option value="">--Choose a color--</option>
+      <option onchange="green">Light Blue</option>
+      <option onchange="blue" value="lightgreen">Light Green</option>
+      <option onchange="green" value="lightyellow">Light Yellow</option>
+      <option onchange="green" value="lightpink">Light Pink</option>
+      <option onchange="green" value="lightgray">Light Gray</option>
+    </select>
+  </body>
+
+  <script src="main.js"></script>
+</html>
