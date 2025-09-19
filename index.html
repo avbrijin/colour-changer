@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Background Color Picker</title>
-
+    <title>Document</title>
   </head>
   <body>
-    <h2>🎨 Select Background Color</h2>
-
-    <!-- Dropdown with onchange -->
-    <select id="colorPicker" onchange="changeColor(this.value)">
-      <option value="">--Choose a color--</option>
-      <option onchange="green">Light Blue</option>
-      <option onchange="blue" value="lightgreen">Light Green</option>
-      <option onchange="green" value="lightyellow">Light Yellow</option>
-      <option onchange="green" value="lightpink">Light Pink</option>
-      <option onchange="green" value="lightgray">Light Gray</option>
-    </select>
+    <div>
+      <center>
+        <select onchange="colorChange(value)" name="Background-Color">
+          <option class="options" value="" disabled selected>
+            Choose a Background color
+          </option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="Black">Black</option>
+          <option value="yellow">Yellow</option>
+          <option value="Grey">Grey</option>
+        </select>
+      </center>
+    </div>
   </body>
-
   <script src="main.js"></script>
 </html>
